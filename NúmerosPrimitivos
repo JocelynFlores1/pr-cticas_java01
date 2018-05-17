@@ -1,0 +1,47 @@
+/*
+ * Declara una variable para cada tipo de dato primario numérico con los siguientes valores.
+ * Máximo valor de cada tipo de dato.
+ * Mínimo valor de cada tipo de dato. 
+ * Imprime cada variable declarada.
+ */
+package tipodedatoprimitivo;
+
+/**
+ *
+ * @author Jocelyn Flores Badillo TIC 32
+ */
+public class TipoDeDatoPrimitivo {
+    public static void main(String[] args) {
+       byte bymin = -128;
+       System.out.println("Valor mínimo de byte es:"+bymin);
+       byte bymax = 127;
+       System.out.println("Valor máximo de byte es: "+bymax);
+       short shmin = -32768;
+       System.out.println("Valor mínimo de short es: "+shmin);
+       short shmax = 32767;
+       System.out.println("Valor máximo de short es: "+shmax);
+       int inmin = -2147483648;
+       System.out.println("Valor mínimo de int es: "+inmin);
+       int inmax = 2147483647;
+       System.out.println("Valor máximo de int es: "+inmax);
+       long lomin = -922337203; 
+       /* Es el valor Mínimo de Long pero es demasiado largo para declararlo -9223372036854775808*/
+       System.out.println("Valor mínimo de long es: "+lomin);
+       long lomax = 922337203;
+       /* Es el valor máximo de Long pero es demasiado largo para declararlo*/
+       System.out.println("Valor máximo de long es: "+lomax);
+       float fmin = -340000000000000000000000000000000000000f;
+       /* El valor mínimo de float es -3400000000000000000000000000000000000000f pero no se puede declarar por que es demasiado largo*/
+       System.out.println("Valor mínimo de float es: "+fmin);
+       float fmax = 340000000000000000000000000000000000000f;
+       /* El valor máximo de float es 3400000000000000000000000000000000000000f pero no se puede declarar por que es demasiado largo*/
+       System.out.println("El valor máximo de float es: "+fmax);
+       double domin= -1800000000;
+       /* El valor mínimo de double es –1.8 × 10^308 no se puede declarar por que es demasiado largo*/
+       System.out.println("El valor mínimo de double es:"+domin);
+       double domax = 1800000000;
+       /* El valor máximo de double es 1.8 × 10^308 no se puede declarar por que es demasiado largo*/
+       System.out.println("El valor máximo de double es: "+domax);
+    }
+    
+}
